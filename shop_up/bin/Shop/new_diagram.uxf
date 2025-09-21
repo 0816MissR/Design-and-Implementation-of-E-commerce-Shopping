@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>10</x>
+      <y>10</y>
+      <w>290</w>
+      <h>260</h>
+    </coordinates>
+    <panel_attributes>Shop::Goods
+--
+-goodsID = new int[100]: int[]
+-goodsName = new String[100]: String[]
+-goodsPrice = new double[100]: double[]
+--
++showGoods(): void
++searchGoods(): void
++list(): void
++getGoodsID(): int[]
++setGoodsID(int[] goodsID): void
++getGoodsName(): String[]
++setGoodsName(String[] goodsName): void
++getGoodsPrice(): double[]
++setGoodsPrice(double[] goodsPrice): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>310</x>
+      <y>10</y>
+      <w>200</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>Shop::ShoppingCartGUI
+--
+-cartTextArea: JTextArea
+--
++ShoppingCartGUI(): ctor
++refreshCart(): void
+-calculateCartTotal(): double
++main(String[] args): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>520</x>
+      <y>10</y>
+      <w>180</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>Shop::OrderGUI
+--
+-orderTextArea: JTextArea
+--
++OrderGUI(): ctor
++generateOrder(): void
++main(String[] args): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>10</x>
+      <y>280</y>
+      <w>330</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>Shop::ShoppingCart
+--
++payNum = new int[100]: int[]
+--
++addGoods(int needGoods, int needAddNum): int
++showCart(): void
++deleteGoods(int goodsID): int
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>350</x>
+      <y>280</y>
+      <w>210</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>Shop::Order
+--
+--
++showPay(): void
++deleteOrder(int goodsID): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>570</x>
+      <y>280</y>
+      <w>180</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Shop::Main
+--
+--
++main(String[] args): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>10</x>
+      <y>410</y>
+      <w>200</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Shop::OrderFileReader
+--
+--
++readOrdersFromFile(): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>220</x>
+      <y>410</y>
+      <w>280</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Shop::OrderFileWriter
+--
+--
++writeOrderToFile(String orderData): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
